@@ -1,0 +1,58 @@
+[
+  {
+    "invoice_number": "01/07/2023",
+    "description": "Grape harvest labor",
+    "company": "Grape's Harvest",
+    "amount": 200,
+    "status": "PENDING",
+    "daysLeft": 23
+  },
+  {
+    "invoice_number": "02/07/2023",
+    "description": "Wine label design",
+    "company": "Grape's Harvest",
+    "amount": 50,
+    "status": "PENDING",
+    "daysLeft": 5
+  },
+  {
+    "invoice_number": "23/07/2023",
+    "description": "Wine shipment",
+    "company": "Delivery company",
+    "amount": 770,
+    "status": "PENDING",
+    "daysLeft": 50
+  },
+  {
+    "number": "01/06/2023",
+    "description": "Wine barrels purchase",
+    "company": "Grape's Harvest",
+    "amount": 150,
+    "status": "PAID",
+    "daysLeft": null
+  },
+  {
+    "number": "02/06/2023",
+    "description": "Wine barrels purchase",
+    "company": "Grape's Harvest",
+    "amount": 80,
+    "status": "PAID",
+    "daysLeft": null
+  },
+  {
+    "invoice_number": "23/03/2023",
+    "description": "White wine bottles",
+    "company": "Grape's Harvest",
+    "amount": 120,
+    "status": "PAID",
+    "daysLeft": null
+  },
+  {
+    "invoice_number": "01/02/2023",
+    "description": "Wine promotion materials",
+    "company": "AD agency",
+    "amount": 190,
+    "status": "PAID",
+    "daysLeft": null
+  }
+]

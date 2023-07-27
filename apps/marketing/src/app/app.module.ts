@@ -9,7 +9,7 @@ import {appRoutes} from './app.routes';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking'}),
+    RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking', useHash: true}),
     ShellModule.forRoot({
       applicationName: 'Marketing',
       primaryColor: '#2be792'

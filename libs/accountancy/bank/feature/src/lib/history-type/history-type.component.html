@@ -1,0 +1,12 @@
+<ui-card title="History type"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="historyTypes$ | async as historyTypes">
+    <ngx-charts-pie-chart *ngIf="historyTypes.length"
+                          [scheme]="colorScheme"
+                          [gradient]="true"
+                          [doughnut]="true"
+                          [labels]="true"
+                          [results]="historyTypes">
+    </ngx-charts-pie-chart>
+  </div>
+</ui-card>

@@ -1,0 +1,18 @@
+div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  h2 {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  .separator {
+    color: var(--background-l-4);
+  }
+}

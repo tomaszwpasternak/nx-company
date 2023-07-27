@@ -1,0 +1,8 @@
+<ui-card [loading]="!!(isLoading$ | async)"
+         title="Clients">
+  <div *ngIf="clients$ | async as clients">
+    <h2>
+      {{clients.value | number}}
+    </h2>
+  </div>
+</ui-card>

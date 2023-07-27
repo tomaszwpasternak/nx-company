@@ -1,0 +1,14 @@
+<ui-card title="Income and Outcome"
+         [loading]="!!(isLoading$ | async)">
+  <div #container *ngIf="incomeOutcomes$ | async as incomeOutcomes">
+    <ng-container *ngIf="incomeOutcomes.length">
+      <ngx-charts-bar-vertical-2d
+              [view]="view"
+              [gradient]="true"
+              [xAxis]="true"
+              [scheme]="colorScheme"
+              [results]="incomeOutcomes">
+      </ngx-charts-bar-vertical-2d>
+    </ng-container>
+  </div>
+</ui-card>

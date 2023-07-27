@@ -1,0 +1,9 @@
+<ui-card [loading]="!!(isLoading$ | async)"
+         title="Balance"
+         color="primary">
+  <div *ngIf="balance$ | async as balance">
+    <h2>
+      {{balance.value | number}}$
+    </h2>
+  </div>
+</ui-card>

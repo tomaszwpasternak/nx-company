@@ -1,0 +1,16 @@
+<div class="card"
+     [class.default]="color === 'default'"
+     [class.primary]="color === 'primary'"
+     [class.secondary]="color === 'secondary'"
+     [class.tertiary]="color === 'tertiary'">
+  <h3 *ngIf="title">
+    <i class="material-icons" *ngIf="titleIcon">{{titleIcon}}</i>
+    {{title}}
+  </h3>
+
+  <i class="material-icons loading" @fadeIn *ngIf="loading">loop</i>
+
+  <div @fadeIn class="content" *ngIf="!loading">
+    <ng-content></ng-content>
+  </div>
+</div>

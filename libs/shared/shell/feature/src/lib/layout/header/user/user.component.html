@@ -1,0 +1,6 @@
+<ng-container *ngIf="user$ | async as user; else userSkeleton">
+  <ui-user [img]="user.avatarUrl"></ui-user>
+</ng-container>
+<ng-template #userSkeleton>
+  <ui-skeleton width="40px" height="40px"></ui-skeleton>
+</ng-template>

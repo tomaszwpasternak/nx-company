@@ -1,0 +1,18 @@
+<div class="node">
+  <div class="node-name">
+    <ui-button [style.visibility]="node.children.length === 0 ? 'hidden' : ''"
+               [icon]="showChildren ? 'expand_less' : 'expand_more'"
+               (click)="showChildren = !showChildren"></ui-button>
+    <div class="name">
+      {{node.name}}
+
+      <div *ngIf="node.hint" class="hint">{{node.hint}}</div>
+    </div>
+  </div>
+
+  <div *ngIf="showChildren">
+    <ui-tree-node *ngFor="let child of node.children"
+                  [node]="child">
+    </ui-tree-node>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<ui-card title="Employees"
+         color="primary"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="employee$ | async as employee">
+    <strong>
+      {{employee.value}}
+    </strong>
+  </div>
+</ui-card>
+

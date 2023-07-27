@@ -1,0 +1,12 @@
+<ui-card title="Employee type"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="employeeTypes$ | async as employeeTypes">
+    <ngx-charts-pie-chart *ngIf="employeeTypes.length"
+                          [scheme]="colorScheme"
+                          [gradient]="true"
+                          [doughnut]="true"
+                          [labels]="true"
+                          [results]="employeeTypes">
+    </ngx-charts-pie-chart>
+  </div>
+</ui-card>

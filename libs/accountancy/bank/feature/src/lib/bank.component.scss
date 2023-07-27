@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .statistics {
+    height: 30%;
+    display: flex;
+    gap: 10px;
+
+    accountancy-bank-balance {
+      width: 30%;
+    }
+
+    accountancy-bank-salary-to-pay {
+      width: calc(40% - 10px);
+    }
+
+    accountancy-bank-invoices-to-pay {
+      width: calc(40% - 10px);
+    }
+  }
+
+  .history {
+    height: calc(70% - 10px);
+    display: flex;
+    gap: 10px;
+
+    accountancy-bank-history {
+      width: 70%;
+    }
+
+    accountancy-bank-history-type {
+      width: calc(30% - 10px);
+    }
+  }
+}

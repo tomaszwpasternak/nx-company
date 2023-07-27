@@ -1,0 +1,10 @@
+<ui-card [loading]="!!(isLoading$ | async)"
+         title="Invoices to pay">
+  <div *ngIf="invoiceToPay$ | async as invoiceToPay">
+    <h2>
+      {{invoiceToPay.quantity}} <span class="separator">|</span> {{invoiceToPay.money | number}}$
+    </h2>
+
+    <ui-button text="Show invoices" (click)="navigateToInvoices()"></ui-button>
+  </div>
+</ui-card>

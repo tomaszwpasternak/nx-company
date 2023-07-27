@@ -1,0 +1,72 @@
+:host {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--background-l-1);
+
+  &.default {
+    background: var(--background-l-1);
+
+    h3 {
+      font-weight: 300;
+    }
+  }
+
+  &.primary {
+    background: var(--primary-gradient);
+    color: var(--background);
+  }
+
+  &.secondary {
+    background: var(--secondary-gradient);
+    color: var(--background);
+  }
+
+  &.tertiary {
+    background: var(--tertiary-gradient);
+    color: var(--background);
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .loading {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    animation: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

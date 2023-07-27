@@ -1,0 +1,48 @@
+.marketing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+
+  .current-marketing {
+    display: flex;
+    gap: 10px;
+    height: 70%;
+    min-height: 450px;
+
+    marketing-dashboard-income-outcome {
+      width: 70%;
+      height: 100%;
+    }
+
+    .balance {
+      display: flex;
+      width: calc(30% - 10px);
+      height: 100%;
+      flex-direction: column;
+      gap: 10px;
+
+      marketing-dashboard-balance {
+        height: 40%;
+      }
+
+      marketing-dashboard-current-advertisement {
+        height: calc(60% - 10px);
+      }
+    }
+  }
+
+  .graphs {
+    display: flex;
+    height: calc(30% - 10px);
+    gap: 10px;
+
+    marketing-dashboard-target-group {
+      width: 75%;
+    }
+
+    marketing-dashboard-marketing-type {
+      width: calc(25% - 10px);
+    }
+  }
+}

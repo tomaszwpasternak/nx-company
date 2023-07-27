@@ -1,0 +1,9 @@
+<div class="container">
+  <ui-button [text]="text" [icon]="icon" (click)="opened = true"></ui-button>
+
+  <div *ngIf="opened" class="menu">
+    <div class="menu-option" *ngFor="let option of options" (click)="option.onClick()">
+      {{option.label}}
+    </div>
+  </div>
+</div>

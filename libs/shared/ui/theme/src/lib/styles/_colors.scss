@@ -1,0 +1,60 @@
+@mixin colors($primary) {
+  $secondary: #F26419;
+  $tertiary: #33b6d0;
+  $light-background: #ececec;
+  $light-text: #2A2B2A;
+
+  $dark-background: #2A2B2A;
+  $dark-text: #FDFFF7;
+
+  body {
+    @include generate-dark-variants(primary, $primary);
+    @include generate-dark-variants(secondary, $secondary);
+    @include generate-dark-variants(tertiary, $tertiary);
+    @include generate-dark-variants(background, $dark-background);
+    @include generate-dark-variants(text, $dark-text);
+
+    //TODO: adjust colors
+    &.light-mode {
+      @include generate-light-variants(primary, $primary);
+      @include generate-light-variants(secondary, $secondary);
+      @include generate-light-variants(tertiary, $tertiary);
+      @include generate-light-variants(background, $light-background);
+      @include generate-light-variants(text, $light-text);
+    }
+
+    &.dark-mode {
+      @include generate-dark-variants(primary, $primary);
+      @include generate-dark-variants(secondary, $secondary);
+      @include generate-dark-variants(tertiary, $tertiary);
+      @include generate-dark-variants(background, $dark-background);
+      @include generate-dark-variants(text, $dark-text);
+    }
+  }
+}
+
+@mixin generate-light-variants($name, $color) {
+  --#{$name}: #{$color};
+  --#{$name}-l-1: #{darken($color, 3%)};
+  --#{$name}-l-2: #{darken($color, 6%)};
+  --#{$name}-l-3: #{darken($color, 9%)};
+  --#{$name}-l-4: #{darken($color, 12%)};
+  --#{$name}-d-1: #{lighten($color, 3%)};
+  --#{$name}-d-2: #{lighten($color, 6%)};
+  --#{$name}-d-3: #{lighten($color, 9%)};
+  --#{$name}-d-4: #{lighten($color, 12%)};
+  --#{$name}-gradient: linear-gradient(120deg, var(--#{$name}-l-2) 0%, var(--#{$name}-d-4) 80%);
+}
+
+@mixin generate-dark-variants($name, $color) {
+  --#{$name}: #{$color};
+  --#{$name}-l-1: #{lighten($color, 3%)};
+  --#{$name}-l-2: #{lighten($color, 6%)};
+  --#{$name}-l-3: #{lighten($color, 9%)};
+  --#{$name}-l-4: #{lighten($color, 12%)};
+  --#{$name}-d-1: #{darken($color, 3%)};
+  --#{$name}-d-2: #{darken($color, 6%)};
+  --#{$name}-d-3: #{darken($color, 9%)};
+  --#{$name}-d-4: #{darken($color, 12%)};
+  --#{$name}-gradient: linear-gradient(120deg, var(--#{$name}-l-2) 0%, var(--#{$name}-d-4) 80%);
+}

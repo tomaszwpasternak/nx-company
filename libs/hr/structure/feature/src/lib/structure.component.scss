@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+
+  hr-structure-tree {
+    width: 75%;
+  }
+
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(25% - 10px);
+
+    hr-structure-employee {
+      height: 34%;
+    }
+
+    hr-structure-department {
+      height: calc(33% - 10px);
+    }
+
+    hr-structure-employee-type {
+      height: calc(33% - 10px);
+    }
+  }
+}

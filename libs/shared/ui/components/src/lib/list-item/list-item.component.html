@@ -1,0 +1,25 @@
+<div class="list-item">
+  <div class="item-content">
+    <span class="material-icons icon"
+          [class.primary]="color ==='primary'"
+          [class.secondary]="color ==='secondary'"
+          [class.tertiary]="color ==='tertiary'">
+      {{icon}}
+    </span>
+
+    <div class="label-container">
+      <span class="label">
+        {{label}}
+      </span>
+
+      <span class="hint">
+        {{hint}}
+      </span>
+    </div>
+  </div>
+
+  <div>
+    <span *ngIf="rightText">{{rightText}} </span>
+    <ui-button *ngIf="buttonText" [text]="buttonText" color="ghost" (click)="buttonClicked.emit()"></ui-button>
+  </div>
+</div>

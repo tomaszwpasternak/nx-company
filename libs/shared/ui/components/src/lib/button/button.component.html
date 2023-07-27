@@ -1,0 +1,9 @@
+<button [class.default]="color === 'default'"
+        [class.primary]="color === 'primary'"
+        [class.secondary]="color === 'secondary'"
+        [class.tertiary]="color === 'tertiary'"
+        [class.ghost]="color === 'ghost'"
+        [class.dark-text]="darkText">
+  <span *ngIf="icon" class="material-icons">{{icon}}</span>
+  <span *ngIf="text">{{text}}</span>
+</button>

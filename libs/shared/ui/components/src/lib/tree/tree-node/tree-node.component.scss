@@ -1,0 +1,30 @@
+.node {
+  .node-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .hint {
+      font-size: 10px;
+      font-family: 'Poppins', sans-serif;
+      opacity: 0.5;
+      font-weight: 200;
+    }
+
+    .name {
+      width: 100%;
+      transition: 0.2s;
+      padding: 5px;
+      background: var(--background-l-1);
+
+      &:hover {
+        background: var(--background-l-2);
+      }
+    }
+  }
+
+  ui-tree-node {
+    display: block;
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="select"
+     [class.opened]="opened"
+     (click)="opened = true">
+
+  <span> {{field.label}} </span>
+  <span class="material-icons">expand_more</span>
+
+  <div class="options" *ngIf="opened">
+    <span *ngFor="let option of options"
+          (click)="selectOption(option)">
+      {{option.label}}
+    </span>
+  </div>
+</div>
+

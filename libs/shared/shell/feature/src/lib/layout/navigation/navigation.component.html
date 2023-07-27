@@ -1,0 +1,17 @@
+<div class="menu">
+  <div class="content">
+    <h3>
+      {{applicationName}}
+    </h3>
+
+    <div *ngFor="let menuItem of navigationItems"
+         class="route-link"
+         [routerLink]="[menuItem.path]"
+         [routerLinkActive]="'active'">
+      <i class="material-icons">{{menuItem.icon}}</i>
+      {{menuItem.name}}
+    </div>
+  </div>
+
+  <ui-menu icon="apps" [options]="apps"></ui-menu>
+</div>

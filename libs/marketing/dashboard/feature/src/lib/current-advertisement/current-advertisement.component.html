@@ -1,0 +1,11 @@
+<ui-card title="Current advertisements"
+         [loading]="!!(isLoading$ | async)">
+  <div class="ad-list" *ngIf="currentAdvertisements$ | async as currentAdvertisements">
+    <ui-list-item *ngFor="let ad of currentAdvertisements"
+                  [color]="ad.type"
+                  [label]="ad.name"
+                  [icon]="ad.icon"
+                  [hint]="ad.group">
+    </ui-list-item>
+  </div>
+</ui-card>

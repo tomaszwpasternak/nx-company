@@ -1,0 +1,12 @@
+<ng-container *ngIf="unreadNotifications$ | async as notifications; else skeleton">
+  <div class="notification-button">
+    <ui-button icon="notifications"></ui-button>
+    <div class="unread" *ngIf="notifications.length"></div>
+  </div>
+</ng-container>
+
+<ng-template #skeleton>
+  <ui-skeleton width="40px" height="40px"></ui-skeleton>
+</ng-template>
+
+

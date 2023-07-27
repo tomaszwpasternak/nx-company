@@ -1,0 +1,8 @@
+<div class="toolbar">
+  <ui-button icon="unfold_more" text="Expand all" color="ghost" (click)="expandAll()"></ui-button>
+  <ui-button icon="unfold_less" text="Collapse all" color="ghost" (click)="collapseAll()"></ui-button>
+</div>
+
+<ui-tree-node *ngFor="let child of data"
+              [node]="child">
+</ui-tree-node>

@@ -1,0 +1,10 @@
+<ui-card [loading]="!!(isLoading$ | async)"
+         title="Salary to pay">
+  <div *ngIf="salaryToPay$ | async as salaryToPay">
+    <h2>
+      {{salaryToPay.quantity}} <span class="separator">|</span> {{salaryToPay.money | number}}$
+    </h2>
+
+    <ui-button text="Show Payouts" (click)="navigateToPayouts()"></ui-button>
+  </div>
+</ui-card>

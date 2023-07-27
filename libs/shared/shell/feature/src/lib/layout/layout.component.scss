@@ -1,0 +1,29 @@
+$header-height: 70px;
+$menu-width: 200px;
+
+.app-container {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  padding: 10px;
+
+  aside {
+    width: $menu-width;
+  }
+
+  .app-content {
+    height: 100%;
+    width: calc(100% - $menu-width);
+    padding: 0 20px;
+
+    header {
+      height: $header-height;
+      padding-bottom: 10px;
+    }
+
+    main {
+      height: calc(100% - $header-height);
+      overflow-y: auto;
+    }
+  }
+}

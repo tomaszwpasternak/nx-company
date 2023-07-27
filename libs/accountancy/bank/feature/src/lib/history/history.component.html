@@ -1,0 +1,12 @@
+<ui-card title="History"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="histories$ | async as histories">
+    <ui-list-item *ngFor="let history of histories"
+                  [label]="history.label"
+                  [hint]="history.date"
+                  [color]="history.amount > 0 ? 'primary' : 'secondary'"
+                  [icon]="history.amount > 0 ? 'south' : 'north_east'"
+                  [rightText]="(history.amount | number) + '$'">
+    </ui-list-item>
+  </div>
+</ui-card>

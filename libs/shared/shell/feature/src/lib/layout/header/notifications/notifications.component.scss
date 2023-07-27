@@ -1,0 +1,13 @@
+.notification-button {
+  position: relative;
+
+  .unread {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+  }
+}

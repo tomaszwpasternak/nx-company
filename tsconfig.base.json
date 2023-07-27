@@ -1,0 +1,60 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": "",
+    "paths": {
+      "@accountancy/bank/data-access": [
+        "libs/accountancy/bank/data-access/src/index.ts"
+      ],
+      "@accountancy/bank/feature": [
+        "libs/accountancy/bank/feature/src/index.ts"
+      ],
+      "@accountancy/invoices/data-access": [
+        "libs/accountancy/invoices/data-access/src/index.ts"
+      ],
+      "@accountancy/invoices/feature": [
+        "libs/accountancy/invoices/feature/src/index.ts"
+      ],
+      "@accountancy/payouts/feature": [
+        "libs/accountancy/payouts/feature/src/index.ts"
+      ],
+      "@api": ["api/src/index.ts"],
+      "@hr/structure/data-access": [
+        "libs/hr/structure/data-access/src/index.ts"
+      ],
+      "@hr/structure/feature": [
+        "libs/hr/structure/feature/src/index.ts"
+      ],
+      "@env/*": ["environment/*"],
+      "@marketing/dashboard/data-access": [
+        "libs/marketing/dashboard/data-access/src/index.ts"
+      ],
+      "@marketing/dashboard/feature": [
+        "libs/marketing/dashboard/feature/src/index.ts"
+      ],
+      "@shared/company/data-access": [
+        "libs/shared/company/data-access/src/index.ts"
+      ],
+      "@shared/notification/data-access": [
+        "libs/shared/notification/data-access/src/index.ts"
+      ],
+      "@shared/shell/feature": ["libs/shared/shell/feature/src/index.ts"],
+      "@shared/ui/components": ["libs/shared/ui/components/src/index.ts"],
+      "@shared/ui/theme": ["libs/shared/ui/theme/src/index.ts"],
+      "@shared/user/data-access": ["libs/shared/user/data-access/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

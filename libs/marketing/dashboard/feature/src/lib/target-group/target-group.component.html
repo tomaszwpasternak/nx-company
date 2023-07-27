@@ -1,0 +1,11 @@
+<ui-card title="Target group"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="targetGroups$ | async as targetGroups">
+    <ngx-charts-bar-horizontal *ngIf="targetGroups.length"
+                               [scheme]="colorScheme"
+                               [gradient]="true"
+                               [yAxis]="true"
+                               [results]="targetGroups">
+    </ngx-charts-bar-horizontal>
+  </div>
+</ui-card>

@@ -1,0 +1,9 @@
+<ui-card title="Departments"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="department$ | async as department">
+    <strong>
+      {{department.value}}
+    </strong>
+  </div>
+</ui-card>
+

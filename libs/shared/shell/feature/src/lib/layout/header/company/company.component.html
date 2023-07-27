@@ -1,0 +1,11 @@
+<ng-container *ngIf="companyOptions$ | async as companies; else skeleton">
+  <ui-select *ngIf="selectedCompanyFormControl.value; else skeleton"
+            [formControl]="selectedCompanyFormControl"
+            [options]="companies"
+            (optionChanged)="companyChanged()">
+  </ui-select>
+</ng-container>
+
+<ng-template #skeleton>
+  <ui-skeleton width="300px" height="40px"></ui-skeleton>
+</ng-template>

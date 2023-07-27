@@ -1,0 +1,12 @@
+<ui-card title="Marketing type"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="marketingTypes$ | async as marketingTypes">
+    <ngx-charts-pie-chart *ngIf="marketingTypes.length"
+                          [scheme]="colorScheme"
+                          [gradient]="true"
+                          [doughnut]="true"
+                          [labels]="true"
+                          [results]="marketingTypes">
+    </ngx-charts-pie-chart>
+  </div>
+</ui-card>

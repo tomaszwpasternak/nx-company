@@ -1,0 +1,17 @@
+<ui-card title="Balance"
+         color="primary"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="balance$ | async as balance">
+
+    <span></span>
+    <strong>
+      {{balance.type === 'PROFIT' ? '+' : '-'}}{{balance.value}}$
+    </strong>
+
+    <ui-button text="Show accountancy"
+               color="ghost"
+               [darkText]="true"
+               (click)="navigateToAccountancy()">
+    </ui-button>
+  </div>
+</ui-card>

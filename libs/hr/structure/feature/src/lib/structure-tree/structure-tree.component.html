@@ -1,0 +1,6 @@
+<ui-card title="Structure"
+         [loading]="!!(isLoading$ | async)">
+  <div *ngIf="structure$ | async as structure">
+    <ui-tree [data]="structure"></ui-tree>
+  </div>
+</ui-card>

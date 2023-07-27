@@ -1,0 +1,9 @@
+<ui-card [loading]="!!(isLoading$ | async)"
+         title="Invoices to pay"
+         color="primary">
+  <div *ngIf="amount$ | async as amount">
+    <h2>
+      {{amount.value | number}}
+    </h2>
+  </div>
+</ui-card>

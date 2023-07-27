@@ -1,0 +1,9 @@
+<ui-card [loading]="!!(isLoading$ | async)"
+         title="Days left"
+         color="secondary">
+  <div *ngIf="days$ | async as days">
+    <h2>
+      {{days.value | number}}
+    </h2>
+  </div>
+</ui-card>

@@ -1,0 +1,12 @@
+<ui-card [loading]="!!(isLoading$ | async)"
+         title="Invoices">
+  <div *ngIf="invoices$ | async as invoices">
+    <ui-list-item *ngFor="let invoice of invoices"
+                  [label]="invoice.description"
+                  [hint]="invoice.company"
+                  [icon]="invoice.status === 'PAID' ? 'check' : 'attach_money'"
+                  [color]="invoice.status === 'PAID' ? 'tertiary' : 'secondary'"
+                  [rightText]="(invoice.amount | number) + '$'">
+    </ui-list-item>
+  </div>
+</ui-card>

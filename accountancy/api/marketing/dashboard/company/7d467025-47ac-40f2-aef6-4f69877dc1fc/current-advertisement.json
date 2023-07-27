@@ -1,0 +1,62 @@
+[
+  {
+    "id": "286021ec-1490-4e1d-a74e-2824edde8d37",
+    "name": "Ads",
+    "group": "Internet Ads",
+    "icon": "language",
+    "type": "tertiary",
+    "profit": "+50%",
+    "monthlyProfit": 1000,
+    "monthlyLoss": 505,
+    "startDate": "01-2023",
+    "endDate": null
+  },
+  {
+    "id": "f6f54b39-245d-4443-9969-762f102b3eea",
+    "name": "Ads",
+    "group": "TV commercials",
+    "icon": "tv",
+    "type": "primary",
+    "profit": "-45%",
+    "monthlyProfit": 80,
+    "monthlyLoss": 195,
+    "startDate": "02-2023",
+    "endDate": null
+  },
+  {
+    "id": "7e17d46c-35cd-4a3a-9919-eab5e3eed5d0",
+    "name": "Posts",
+    "group": "Social Media",
+    "icon": "public",
+    "type": "secondary",
+    "profit": "-45%",
+    "monthlyProfit": 120,
+    "monthlyLoss": 10,
+    "startDate": "05-2023",
+    "endDate": null
+  },
+  {
+    "id": "2de024da-b49d-45c7-9c88-92968ddf388b",
+    "name": "Wine tasters",
+    "group": "Events",
+    "icon": "event",
+    "type": "tertiary",
+    "profit": "+20%",
+    "monthlyProfit": 1200,
+    "monthlyLoss": 1000,
+    "startDate": "05-2023",
+    "endDate": null
+  },
+  {
+    "id": "10c7117f-3a1d-4983-a931-792d13aa048a",
+    "name": "Ads",
+    "group": "Radio",
+    "icon": "radio",
+    "type": "secondary",
+    "profit": "+5%",
+    "monthlyProfit": 60,
+    "monthlyLoss": 50,
+    "startDate": "06-2023",
+    "endDate": null
+  }
+]

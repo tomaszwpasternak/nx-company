@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Social media",
+    "value": 23
+  },
+  {
+    "name": "TV commercials",
+    "value": 50
+  },
+  {
+    "name": "Internet ads",
+    "value": 13
+  },
+  {
+    "name": "Radio",
+    "value": 5
+  },
+  {
+    "name": "Events",
+    "value": 9
+  }
+]

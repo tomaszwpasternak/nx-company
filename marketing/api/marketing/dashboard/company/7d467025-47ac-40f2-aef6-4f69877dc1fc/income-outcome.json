@@ -1,0 +1,119 @@
+[
+  {
+    "name": "01-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 1320
+      },
+      {
+        "name": "Outcome",
+        "value": 505
+      }
+    ]
+  },
+  {
+    "name": "02-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 1400
+      },
+      {
+        "name": "Outcome",
+        "value": 700
+      }
+    ]
+  },
+  {
+    "name": "03-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 2350
+      },
+      {
+        "name": "Outcome",
+        "value": 700
+      }
+    ]
+  },
+  {
+    "name": "04-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 1000
+      },
+      {
+        "name": "Outcome",
+        "value": 700
+      }
+    ]
+  },
+  {
+    "name": "05-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 400
+      },
+      {
+        "name": "Outcome",
+        "value": 1200
+      }
+    ]
+  },
+  {
+    "name": "06-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 2300
+      },
+      {
+        "name": "Outcome",
+        "value": 700
+      }
+    ]
+  },
+  {
+    "name": "07-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 700
+      },
+      {
+        "name": "Outcome",
+        "value": 300
+      }
+    ]
+  },
+  {
+    "name": "08-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 500
+      },
+      {
+        "name": "Outcome",
+        "value": 300
+      }
+    ]
+  },
+  {
+    "name": "09-2023",
+    "series": [
+      {
+        "name": "Income",
+        "value": 500
+      },
+      {
+        "name": "Outcome",
+        "value": 300
+      }
+    ]
+  }
+]

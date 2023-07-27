@@ -1,0 +1,62 @@
+[
+  {
+    "id": "18ad3eb9-837f-433e-b61c-fc0ef326ad5b",
+    "name": "Ads",
+    "group": "Internet Ads",
+    "icon": "language",
+    "type": "primary",
+    "profit": "-50%",
+    "monthlyProfit": 5000,
+    "monthlyLoss": 10000,
+    "startDate": "01-2023",
+    "endDate": null
+  },
+  {
+    "id": "488a20c9-b41c-4f39-bc77-a730a1f97ecb",
+    "name": "Ads",
+    "group": "TV commercials",
+    "icon": "tv",
+    "type": "secondary",
+    "profit": "+300%",
+    "monthlyProfit": 30000,
+    "monthlyLoss": 10000,
+    "startDate": "01-2023",
+    "endDate": null
+  },
+  {
+    "id": "f27769b8-6df6-46dc-80b2-b07bf606135d",
+    "name": "Vlogs",
+    "group": "Social Media",
+    "icon": "public",
+    "type": "secondary",
+    "profit": "-33%",
+    "monthlyProfit": 20000,
+    "monthlyLoss": 30000,
+    "startDate": "04-2023",
+    "endDate": null
+  },
+  {
+    "id": "1fccc3bc-1950-4053-a1db-ad6212d3b7f3",
+    "name": "Aircraft",
+    "group": "Events",
+    "icon": "event",
+    "type": "tertiary",
+    "profit": "-33%",
+    "monthlyProfit": 20000,
+    "monthlyLoss": 30000,
+    "startDate": "05-2023",
+    "endDate": null
+  },
+  {
+    "id": "54892d9e-6675-4872-ab71-2cc80d1c55d2",
+    "name": "Ads",
+    "group": "Radio",
+    "icon": "radio",
+    "type": "primary",
+    "profit": "+20%",
+    "monthlyProfit": 6000,
+    "monthlyLoss": 5000,
+    "startDate": "06-2023",
+    "endDate": null
+  }
+]
